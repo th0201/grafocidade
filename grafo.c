@@ -42,6 +42,7 @@ void Arquivo(grafo *g){
         }
     }
   }
+  
   fclose(arq);
 }
 
