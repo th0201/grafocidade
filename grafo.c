@@ -29,7 +29,7 @@ void criarAresta (grafo *g, int x, int y) {
 int main () {
   grafo *G = (grafo *)calloc(tam , sizeof (grafo));
   
-     int c, j,i;
+     int c, j, i;
    printf(" 0-ma\n 1-pi\n 2-ce\n 3-ba\n 4-pe\n 5-al\n 6-se\n 7-pb\n 8-rn\n");
 criarAresta (G, 0, 1);
 criarAresta (G, 1, 2);
