@@ -65,6 +65,6 @@ criarAresta (G, 4, 5);
 criarAresta (G, 5, 6);
 criarAresta (G, 7, 8);
 
-  Arquivo(G);    
+ Arquivo(G);    
  
 }
