@@ -44,6 +44,8 @@ void Arquivo(){
   fprintf(arq, "Vertices (4, 7)\n");
   fprintf(arq, "Vertices (5, 6)\n");
   fprintf(arq, "Vertices (7, 8)");
+  
+  
   fclose(arq);
 }
 
