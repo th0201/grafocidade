@@ -26,26 +26,21 @@ void criarAresta (grafo *g, int x, int y) {
       g->arestas [y][x] = 1;
 }
 
-void Arquivo(){
-  FILE* arq=fopen("arquivo","w");
+void Arquivo(grafo *g){
+  int x, y;
+  FILE* arq=fopen("arquivo.txt","w");
   fprintf(arq, "vertices: 15; Arestas: 14\n");
   fprintf(arq, "0-ma 1-pi 2-ce 3-ba 4-pe 5-al 6-se 7-pb 8-rn\n");
-  fprintf(arq, "Vertices (0, 1)\n");
-  fprintf(arq, "Vertices (1, 2)\n");
-  fprintf(arq, "Vertices (1, 3)\n");
-  fprintf(arq, "Vertices (1, 4)\n");
-  fprintf(arq, "Vertices (2, 8)\n");
-  fprintf(arq, "Vertices (2, 7)\n");
-  fprintf(arq, "Vertices (2, 4)\n");
-  fprintf(arq, "Vertices (3, 4)\n");
-  fprintf(arq, "Vertices (3, 5)\n");
-  fprintf(arq, "Vertices (3, 6)\n");
-  fprintf(arq, "Vertices (4, 5)\n");
-  fprintf(arq, "Vertices (4, 7)\n");
-  fprintf(arq, "Vertices (5, 6)\n");
-  fprintf(arq, "Vertices (7, 8)");
-  
-  
+  for (x = 0; x <= g->vertices ; x++)
+  {
+    for(y=0;y <= g->vertices; y++){
+        if (g->arestas[x][y]==1)
+        {
+          fprintf(arq, "(%d, %d)\n", x, y);
+          g->arestas[y][x] = 0;
+        }
+    }
+  }
   fclose(arq);
 }
 
@@ -69,6 +64,6 @@ criarAresta (G, 4, 5);
 criarAresta (G, 5, 6);
 criarAresta (G, 7, 8);
 
-  Arquivo();    
+  Arquivo(G);    
  
 }
