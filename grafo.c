@@ -53,9 +53,7 @@ void Arquivo(){
 
 int main () {
   grafo *G = (grafo *)calloc(tam , sizeof (grafo));
-  
-     int c, j;
-   printf(" 0-ma\n 1-pi\n 2-ce\n 3-ba\n 4-pe\n 5-al\n 6-se\n 7-pb\n 8-rn\n");
+
 criarAresta (G, 0, 1);
 criarAresta (G, 1, 2);
 criarAresta (G, 1, 3);
@@ -70,13 +68,6 @@ criarAresta (G, 4, 7);
 criarAresta (G, 4, 5);
 criarAresta (G, 5, 6);
 criarAresta (G, 7, 8);
-      
-
- 
-    for (c=0; c<=G->vertices; c++){
-     for(j=0; j<=G->vertices;j++){
-     printf("%d\n",G->arestas[c][j]);}
-    }
 
   Arquivo();    
  
