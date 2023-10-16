@@ -49,8 +49,8 @@ criarAresta(G, 7, 8);
 
  
     for (c=0; c<=G->vertices; c++){
-     for(j=0; j<=G->vertices;j++)
-     printf("%d\n",G->arestas[c][j]);
+     for(j=0; j<=G->vertices;j++){
+     printf("%d\n",G->arestas[c][j]);}
     }
     
  
