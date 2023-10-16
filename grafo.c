@@ -26,6 +26,10 @@ void criarAresta (grafo *g, int x, int y) {
       g->arestas [y][x] = 1;
 }
 
+void Arquivo()
+{
+    
+}
 int main () {
   grafo *G = (grafo *)calloc(tam , sizeof (grafo));
   
