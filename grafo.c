@@ -44,7 +44,7 @@ criarAresta (G, 3, 6);
 criarAresta (G, 4, 7);
 criarAresta (G, 4, 5);
 criarAresta (G, 5, 6);
-criarAresta(G, 7, 8);
+criarAresta (G, 7, 8);
       
 
  
