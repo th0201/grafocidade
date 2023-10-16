@@ -26,7 +26,6 @@ void criarAresta (grafo *g, int x, int y) {
       g->arestas [x][y] = 1;
       g->arestas [y][x] = 1;
 }
-
 void Arquivo(grafo *g){
   int x, y;
   FILE* arq=fopen("arquivo.txt","w");
