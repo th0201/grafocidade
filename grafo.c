@@ -16,6 +16,7 @@ int tamanho (int a, int b) {
     if (b > a) {
       return b;
     }
+      return 0;
 }
 
 void criarAresta (grafo *g, int x, int y) {
